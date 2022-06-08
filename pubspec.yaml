@@ -1,4 +1,4 @@
-name: yaml
+name: yaml_appstream_workaround
 version: 3.1.1
 description: A parser for YAML, a human-friendly data serialization standard
 repository: https://github.com/dart-lang/yaml
