@@ -168,7 +168,9 @@ class Loader {
       var key = _loadNode(event);
       var value = _loadNode(_parser.parse());
       if (children.containsKey(key)) {
-        throw YamlException('Duplicate mapping key.', key.span);
+        // Disabled as Appstream YAML is broken on Ubuntu.
+        // https://github.com/ximion/appstream-generator/issues/92
+        //throw YamlException('Duplicate mapping key.', key.span);
       }
 
       children[key] = value;
